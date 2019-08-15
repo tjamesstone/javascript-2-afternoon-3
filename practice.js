@@ -168,17 +168,6 @@ each(names, function(item, indice){
 });
 // Do not edit the code above.
 
-function each(arrayOfNames, cb){
-
-  let count=arrayOfNames.length;
-    for(let i=0; i<count ;i++)
-    {
-       cb(arrayOfNames[i], arrayOfNames.indice)
-    
-      }
-    }
-
-
 
 ////////// PROBLEM 7 //////////
 
