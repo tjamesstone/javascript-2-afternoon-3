@@ -154,12 +154,12 @@ uniq(names, function(uniqArr){
   For each name in the array, invoke the callback and pass in the name and the name's index as arguments.
 */
 
-function each(arrNames, cb){
-  
-  for(let i = 0; i < arrNames.length; i++){
-    cb(arrNames)
+function each(array, cb){
+  for(let i = 0; i < array.length; i++){
+    cb(array[i], i)
   }
-  cb(indice)
+  
+  
 }
 
 // Do not edit the code below.
@@ -188,10 +188,12 @@ function each(arrayOfNames, cb){
 */
 
 function getUserById (users, id, cb){
+  
   let count=users.length;
     for(let i=0; i<count ;i++)
     {
-        if(users[i]===id){cb(users)}
+        if(users[i].id===id){
+          cb(users[i])}
     
    
             }
