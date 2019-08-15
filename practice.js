@@ -155,10 +155,11 @@ uniq(names, function(uniqArr){
 */
 
 function each(arrNames, cb){
+  
   for(let i = 0; i < arrNames.length; i++){
-
+    cb(arrNames)
   }
-  cb(arrNames, )
+  cb(indice)
 }
 
 // Do not edit the code below.
@@ -169,7 +170,15 @@ each(names, function(item, indice){
 
 function each(arrayOfNames, cb){
 
-}
+  let count=arrayOfNames.length;
+    for(let i=0; i<count ;i++)
+    {
+       cb(arrayOfNames[i], arrayOfNames.indice)
+    
+      }
+    }
+
+
 
 ////////// PROBLEM 7 //////////
 
@@ -179,17 +188,17 @@ function each(arrayOfNames, cb){
 */
 
 function getUserById (users, id, cb){
-let user = []
-let sorted = users.sort();
-        for(let i = 0; i < users.length; i++){
-            if(sorted[i] === user[i]){
-                
-                solution.unshift(sorted[i]);
+  let count=users.length;
+    for(let i=0; i<count ;i++)
+    {
+        if(users[i]===id){cb(users)}
+    
+   
             }
-            
+            cb(users)
           }
-          cb(users)
-        }
+          
+        
 
 // Do not edit the code below.
 var users = [
